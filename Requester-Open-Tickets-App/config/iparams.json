@@ -1,0 +1,17 @@
+
+{
+  "freshservice_domain": {
+    "display_name": "Freshservice domain",
+    "description": "Hostname only, e.g. psiogdigital-helpdesk.freshservice.com",
+    "type": "text",
+    "required": true,
+    "secure": false
+  },
+  "api_key": {
+    "display_name": "Freshservice API key",
+    "description": "API key of an authorized Freshservice agent",
+    "type": "text",
+    "required": true,
+    "secure": true
+  }
+}

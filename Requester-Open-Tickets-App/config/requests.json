@@ -1,0 +1,14 @@
+
+{
+  "getRequesterTickets": {
+    "schema": {
+      "method": "GET",
+      "host": "<%= iparam.freshservice_domain %>",
+      "path": "/api/v2/tickets/filter?query=%22requester_id%3A<%= context.requester_id %>%20AND%20(status%3A2%20OR%20status%3A3)%22",
+      "headers": {
+        "Authorization": "Basic <%= encode(iparam.api_key + ':X') %>",
+        "Accept": "application/json"
+      }
+    }
+  }
+}

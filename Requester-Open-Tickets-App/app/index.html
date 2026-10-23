@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Requester Open Tickets</title>
+  <script async src="{{{appclient}}}"></script>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <main class="main">
+    <h2>Requester Tickets</h2>
+    <!-- <p id="requester-name">Loading requester...</p> -->
+    <p id="message" role="status">Loading tickets...</p>
+    <div id="ticket-list"></div>
+    <button id="refresh-button" type="button">Refresh</button>
+  </main>
+
+  <script defer src="scripts/app.js"></script>
+  <script async type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+  <script async nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+</body>
+</html>
