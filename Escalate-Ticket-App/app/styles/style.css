@@ -1,0 +1,59 @@
+
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  color: #263238;
+  background: #fff;
+}
+
+.main {
+  max-width: 100%;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+#requester-name {
+  color: #596579;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+#message {
+  font-size: 13px;
+  color: #596579;
+}
+
+.ticket {
+  padding: 12px 0;
+  border-bottom: 1px solid #e6eaf0;
+}
+
+.ticket h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.ticket p {
+  margin: 4px 0;
+  font-size: 12px;
+  color: #596579;
+}
+
+.status {
+  display: inline-block;
+  padding: 3px 7px;
+  border-radius: 10px;
+  background: #e8f1ff;
+  font-size: 11px;
+}
+
+button {
+  margin-top: 14px;
+  padding: 8px 12px;
+  cursor: pointer;
+}

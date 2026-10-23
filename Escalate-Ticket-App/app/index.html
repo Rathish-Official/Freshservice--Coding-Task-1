@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escalate Ticket</title>
+  <script src="{{{appclient}}}"></script>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <main class="main">
+    <h2>Escalate Ticket</h2>
+    <label for="reason">Escalation reason</label>
+    <select id="reason">
+      <option value="">Select reason</option>
+      <option value="Customer impact">Customer impact</option>
+      <option value="SLA risk">SLA risk</option>
+      <option value="VIP requester">VIP requester</option>
+    </select>
+    <button id="escalate-button" type="button">Escalate</button>
+    <p id="message" role="status"></p>
+  </main>
+  <script defer src="scripts/app.js"></script>
+</body>
+</html>

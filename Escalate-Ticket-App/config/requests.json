@@ -1,0 +1,24 @@
+{
+  "updateTicket": {
+    "schema": {
+      "method": "PUT",
+      "host": "<%= iparam.freshservice_domain %>",
+      "path": "/api/v2/tickets/<%= context.ticket_id %>",
+      "headers": {
+        "Authorization": "Basic <%= encode(iparam.api_key + ':X') %>",
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  "addNote": {
+    "schema": {
+      "method": "POST",
+      "host": "<%= iparam.freshservice_domain %>",
+      "path": "/api/v2/tickets/<%= context.ticket_id %>/notes",
+      "headers": {
+        "Authorization": "Basic <%= encode(iparam.api_key + ':X') %>",
+        "Content-Type": "application/json"
+      }
+    }
+  }
+}
